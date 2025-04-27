@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresh Farm Milk Delivery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    .logo {
+      height: 100px;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #2e7d32;
+      font-size: 24px;
+    }
+
+    .contact {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .contact p {
+      margin: 4px;
+    }
+
+    .cover-photo {
+      width: 100%;
+      height:100%;
+      object-fit: cover;
+    }
+
+    .section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2, .section h3 {
+      color: #2e7d32;
+    }
+
+    ul {
+      line-height: 1.8;
+      padding-left: 20px;
+    }
+
+    .slider-container {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease;
+      width: auto;
+    }
+
+    .slider-item {
+      position: relative;
+      width: 100vw; 
+      height: 100%; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slider-item img {
+      object-fit: contain; 
+      width: 100%; 
+      height: auto;
+    }
+    .caption {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 50%;
+      z-index: 10;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #f0f0f0;
+    }
+
+    .whatsapp-button {
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://scontent.flko5-1.fna.fbcdn.net/v/t39.30808-1/494104819_122103726998845064_1942590713112992364_n.jpg?stp=c0.43.1078.1078a_dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=oqI9cB0LF-sQ7kNvwEfNrmp&_nc_oc=Adn7sPJog700C54FY2z3JppCdvpG5NVAIlqMkO4HdR-dlSltN0btP5GrIKj8_71cJ0o&_nc_zt=24&_nc_ht=scontent.flko5-1.fna&_nc_gid=aPgxFFoOUTdbmA0T3aoOXw&oh=00_AfH8ia9UC3VUnQcPDffaHktsjO-LupisDl9M3VFpc8Kcxw&oe=68141E8D" alt="Business Logo" class="logo">
+    <h1>Fresh Farm Milk Delivery</h1>
+  </header>
+
+  <img src="https://scontent.flko5-1.fna.fbcdn.net/v/t39.30808-6/494053031_122103727148845064_1544717515759642078_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=WjeH0zTdvsEQ7kNvwGw7mzr&_nc_oc=Adn-Be7s4EO-ka-XENXX9nxF1a9uzr_UlqCiLZSE9korMWDbs2abBgU5CcOgi0AwPuY&_nc_zt=23&_nc_ht=scontent.flko5-1.fna&_nc_gid=aPgxFFoOUTdbmA0T3aoOXw&oh=00_AfFgXwbPMJCloO8c2SiWsElG5DyvDL7dNVnHE6Ri44H-vw&oe=68140619" alt="Cover Photo" class="cover-photo">
+
+  <div class="contact">
+    <p><strong>Address:</strong> Himalayan City, Aurangabad Jagir, Bijnor Road, Lucknow – 226014</p>
+    <p><strong>Contact:</strong> +91-8709198251</p>
+    <p><strong>Email:</strong> shree.milk89@gmail.com</p>
+  </div>
+
+  <div class="section">
+    <h2>We Provide Fresh Milk!</h2>
+    <p>Directly Delivered From Farm To Your Doorstep.</p>
+    <p>With a Vision of delivering 100% natural and fresh milk with quality service – making your life easy, healthy, and worry-free.</p>
+
+    <h3>Products & Pricing:</h3>
+    <ul>
+      <li><strong>Cow Milk:</strong> ₹70/L</li>
+      <li><strong>Buffalo Milk:</strong> ₹76/L</li>
+    </ul>
+
+    <h3>Why You Should Choose Us:</h3>
+    <ul>
+      <li>✅ Direct Farm Sourcing</li>
+      <li>❌ No Artificial Processing</li>
+      <li>🌿 100% Natural, No Additives</li>
+      <li>🥛 Pure Freshness, Guaranteed</li>
+      <li>👐🧼 Strict Hygiene Standards</li>
+    </ul>
+
+    <p>We’re committed to 100% natural & fresh milk. We directly source from trusted farms and test every batch using an ultrasonic milk analyzer to ensure purity in every bottle.</p>
+
+    <h3>How to Join Our Family:</h3>
+    <p>Please send these details over WhatsApp:</p>
+    <ul>
+      <li>Name</li>
+      <li>Address</li>
+      <li>Requirements (Cow/Buff, Quantity)</li>
+    </ul>
+    <p><strong>Note:</strong> Payment is required in advance, either for 1 day or more, as you prefer.</p>
+
+    <h3>Contact Us on WhatsApp</h3>
+    <p>If you have any questions or would like to place an order, feel free to reach out to us!</p>
+    <a href="https://wa.me/918709198251" class="whatsapp-button">Contact Us on WhatsApp</a>
+  </div>
+
+  <div class="section">
+    <h2>Our Process</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slider-item">
+          <img src="https://scontent.flko5-1.fna.fbcdn.net/v/t39.30808-6/494270777_122104645844845064_5529766023031712047_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=yAK0H5135rUQ7kNvwFHt7y0&_nc_oc=AdmRAJGIz_Su-iKcNY55V3gxL8KbdqgUHAugjhHQQoqE2y8SASNfQwyoGUxEaIUFiRA&_nc_zt=23&_nc_ht=scontent.flko5-1.fna&_nc_gid=66hX0iEDEvPNSt4Ex2AgXw&oh=00_AfEnwqNUfTq_nmkSq0FMrTqLveu0pFPN2vE6ZKP9TBWZww&oe=681425A7" alt="Harvesting Milk from Cow">
+          <div class="caption">Direct Farm Sourcing ✅</div>
+        </div>
+        <div class="slider-item">
+          <img src="https://scontent.flko5-1.fna.fbcdn.net/v/t39.30808-6/493055227_122104646066845064_2036563616879439312_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_VS0ZZ7KsjEQ7kNvwFMeg67&_nc_oc=AdlEEg9XInmp-_yXKggmvy4chN-e52yMIhbO1LFU7WxkIJv-j5MTcSiSE9_l6O8Y_Uw&_nc_zt=23&_nc_ht=scontent.flko5-1.fna&_nc_gid=66hX0iEDEvPNSt4Ex2AgXw&oh=00_AfHQEX3raXhe9MNP-vYU-k6OXmuvq2uun2J0l5hhZUy44g&oe=6813FCD5" alt="Collecting Milk in Containers">
+          <div class="caption">Strict Hygiene Standards 👐🧼</div>
+        </div>
+        <div class="slider-item">
+          <img src="https://scontent.flko5-1.fna.fbcdn.net/v/t39.30808-6/493739804_122104649666845064_2472917970642968576_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=l41hXNH8HscQ7kNvwEil2TT&_nc_oc=AdmHIqOvIvyg6_X23wsRFDz8IxpTIe2RqPqU7C2qTc7MxIeXWjl-rXpeJa1BE1npiUs&_nc_zt=23&_nc_ht=scontent.flko5-1.fna&_nc_gid=66hX0iEDEvPNSt4Ex2AgXw&oh=00_AfGqDfAVNhtbACLkusTBuJyfkvrNal5p1GMeAxmIX4Brhg&oe=681401BD" alt="Testing Milk Using Equipment">
+          <div class="caption">Testing for quality using an ultrasonic milk analyzer</div>
+        </div>
+        <div class="slider-item">
+          <img src="https://scontent.flko5-1.fna.fbcdn.net/v/t39.30808-6/493841894_122104649186845064_15808229211677106_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=W4eNZqVs-s4Q7kNvwFtNegW&_nc_oc=AdmkMjH1o7U1jBQiWDu7JreCvyTFPrImdOp8zIrusvuli05aTHSk3zp5XrtmIlXv-J8&_nc_zt=23&_nc_ht=scontent.flko5-1.fna&_nc_gid=66hX0iEDEvPNSt4Ex2AgXw&oh=00_AfHfuSPTjiyJccVwZk7yEfa_y2_Ky6U0UMRf5Jw0hVNgTw&oe=681418D5" alt="Final Product Ready for Delivery">
+          <div class="caption">Pure Freshness, Guaranteed 🥛</div>
+        </div>
+      </div>
+
+      <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Fresh Farm Milk Delivery. All rights reserved.
+  </footer>
+
+  <script>
+    let currentSlide = 0;
+
+    function moveSlide(direction) {
+      const slides = document.querySelectorAll('.slider-item');
+      const totalSlides = slides.length;
+
+      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+
+      const slider = document.querySelector('.slider');
+      const offset = -currentSlide * 100;
+      slider.style.transform = `translateX(${offset}vw)`;
+    }
+  </script>
+
+</body>
+</html>
